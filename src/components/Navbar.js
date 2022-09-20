@@ -4,9 +4,9 @@ import "./Navbar.css"
 const Navbar = () => {
   return (
     <div>
-      <div className="flex gap-20 w-max border-b border-b-black" id="navbarNav">
+      <div className="flex gap-20 w-max border-b border-b-gray-300" id="navbarNav">
 
-        <NavLink className="px-3 pb-3 text-gray-400 font-medium" to="personal-info">Personal Info</NavLink>
+        <NavLink className="px-3 pb-3 text-gray-400 font-medium" to="personal-info" aria-disabled>Personal Info</NavLink>
       
         <NavLink className="px-3 pb-3 text-gray-400 font-medium" to="billing-info">Billing Info</NavLink>
 
