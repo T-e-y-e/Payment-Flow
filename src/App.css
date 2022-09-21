@@ -1,12 +1,9 @@
 .App {
   width: 100vw;
-  min-height: 100vh;
-  /* background: linear-gradient(-10deg, rgba(242, 201, 76, 0.2) 50%, rgba(242, 153, 74, 0.2) 50%); */
-  background-image: url('./assets/Vector\ 55.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  height: 100vh;
   overflow-x: hidden;
+  overflow-y: scroll;
+  background: linear-gradient(170deg, rgba(242, 201, 76, 0.2) 50%, rgba(255, 255, 255) 50% 100%);
 }
 
 .btn{

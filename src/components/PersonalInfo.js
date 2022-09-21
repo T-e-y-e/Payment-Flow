@@ -44,33 +44,33 @@ const cancel = () => {
     <form className='pb-20'>
       <div className="mb-8">
         <label htmlFor="name" className="block mb-2 font-medium text-gray-900">Name</label>
-        <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100"/>
+        <input type="text" id="name" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50"/>
       </div>
 
       <div className="mb-8">
         <label htmlFor="email" className="block mb-2 font-medium text-gray-900">Email Address <span className='text-red-600'>*</span></label>
         <span className="block mb-2 text-sm font-medium text-gray-400">The purchase reciept would be sent to this address</span>
-        <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100" required />
+        <input type="email" id="email" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50" required />
       </div>
 
       <div className="mb-8">
         <label htmlFor="address1" className="block mb-2 font-medium text-gray-900">Address 1</label>
-        <input type="text" id="address1" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100" />
+        <input type="text" id="address1" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50" />
       </div>
 
       <div className="mb-8">
         <label htmlFor="address2" className="block mb-2 font-medium text-gray-900">Address 2</label>
-        <input type="text" id="address2" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100" />
+        <input type="text" id="address2" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50" />
       </div>
 
       <div className="flex justify-between gap-6 mb-14">
         <div className='w-full md:w-3/5'>
             <label htmlFor="lg" className="block mb-2 font-medium text-gray-900">Local Government</label>
-            <input type="text" id="lg" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100"/>
+            <input type="text" id="lg" className="bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50"/>
         </div>
         <div className='w-full md:w-2/5'>
          <label htmlFor="countries" className="block mb-2 font-medium text-gray-900">State</label>
-         <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100">
+         <select id="countries" className="bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50">
            <option defaultValue={""}>Choose a state</option>
            { states && states.map((state) => {
               return (

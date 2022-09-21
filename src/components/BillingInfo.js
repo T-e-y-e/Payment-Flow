@@ -27,12 +27,12 @@ const BillingInfo = () => {
       <form>
       <div className="mb-6">
         <label htmlFor="name" className="block mb-2 font-medium text-gray-900">Name on Card <span className='text-red-600'>*</span></label>
-        <input type="text" id="name" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100"/>
+        <input type="text" id="name" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50"/>
       </div>
 
       <div className='mb-6'>
          <label htmlFor="card-type" className="block mb-2 font-medium text-gray-900">Card Type <span className='text-red-600'>*</span></label>
-         <select id="card-type" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100">
+         <select id="card-type" className="bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50">
            <option value="CA">Visa</option>
            <option value="FR">Master</option>
            <option value="DE">Verve</option>
@@ -42,17 +42,17 @@ const BillingInfo = () => {
       <div className="flex justify-between gap-6 mb-6">
         <div className='w-6/12'>
             <label htmlFor="lg" className="block mb-2 font-medium text-gray-900">Card Details <span className='text-red-600'>*</span></label>
-            <input type="text" id="lg" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100"/>
+            <input type="text" id="lg" className="bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50"/>
         </div>
 
         <div className="mb-6 w-3/12">
         <label htmlFor="address1" className="block mb-2 font-medium text-gray-900">Expiry Date <span className='text-red-600'>*</span></label>
-        <input type="text" id="address1" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100" />
+        <input type="text" id="address1" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50" />
       </div>
 
       <div className="mb-6 w-2/12">
         <label htmlFor="address2" className="block mb-2 font-medium text-gray-900">CVV <span className='text-red-600'>*</span></label>
-        <input type="text" id="address2" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-100" />
+        <input type="text" id="address2" className="shadow-sm bg-white border border-gray-300 text-gray-900 rounded-lg block w-full p-2.5 outline-0 focus:bg-gray-50" />
       </div>        
       </div>
 
