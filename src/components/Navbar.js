@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { Active } from '../Context';
-import "./Navbar.css"
 
 const Navbar = () => {
 
