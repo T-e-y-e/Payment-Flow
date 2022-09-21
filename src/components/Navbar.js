@@ -1,17 +1,29 @@
-import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { Active } from '../Context';
 import "./Navbar.css"
 
 const Navbar = () => {
+
+  const { personalInfoActive, billingInfoActive, confirmPaymentActive } = useContext(Active)
+
   return (
     <div>
-      <div className="flex gap-20 w-max border-b border-b-gray-300" id="navbarNav">
+      <div className="flex gap-20 w-max border-b border-b-gray-300" >
 
-        <NavLink className="px-3 pb-3 text-gray-400 font-medium" to="personal-info" aria-disabled>Personal Info</NavLink>
-      
-        <NavLink className="px-3 pb-3 text-gray-400 font-medium" to="billing-info">Billing Info</NavLink>
+        <div className="font-medium flex flex-col w-max" style={{color: personalInfoActive ? "#F2994A" : "#9ca3af"}}>
+          <span className='px-3 pb-3'>Personal Info</span>
+          <span className='block w-full h-1.5 rounded-full relative top-1' style={{backgroundColor: personalInfoActive ? "#F2994A" : 'transparent'}}></span>
+        </div>
 
-        <NavLink className="px-3 pb-3 text-gray-400 font-medium" to="confirm-payment">Confirm Payment</NavLink>   
+        <div className="font-medium flex flex-col w-max" style={{color: billingInfoActive ? "#F2994A" : "#9ca3af"}}>
+          <span className='px-3 pb-3'>Billing Info</span>
+          <span className='block w-full h-1.5 rounded-full relative top-1' style={{backgroundColor: billingInfoActive ? "#F2994A" : 'transparent'}}></span>
+        </div>
 
+        <div className="font-medium flex flex-col w-max" style={{color: confirmPaymentActive ? "#F2994A" : "#9ca3af"}}>
+          <span className='px-3 pb-3'>Confirm Payment</span>
+          <span className='block w-full h-1.5 rounded-full relative top-1' style={{backgroundColor: confirmPaymentActive ? "#F2994A" : 'transparent'}}></span>
+        </div>  
     </div>
   </div>
   )
